@@ -1,4 +1,6 @@
 
+import styles from "./cssModules/countDownDisplay.module.css"
+
 
 function CountDownDisplay(){
 

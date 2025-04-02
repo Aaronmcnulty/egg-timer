@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import CountDownDisplay from "./CountdownDisplay";
+import CountDownDisplay from "./CountDownDisplay";
 import TimerControls from "./TimerControls";
 import { cookingOptions } from "./cookingOptions";
-
+import styles from "./cssModules/eggTimerPage.module.css"
 function EggTimerPage(){
 
     const [countdownStarted, setCountdownStarted] = useState(false)
@@ -32,7 +32,7 @@ function EggTimerPage(){
     }
 
     return(
-        <div>
+        <div class={styles.eggTimerContainer}>
             <h1>Egg Page</h1>
             <select onChange={handleCookingChange}>
                 <option value={0}>Boiled</option>

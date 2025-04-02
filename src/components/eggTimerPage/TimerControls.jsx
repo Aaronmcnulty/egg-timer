@@ -1,3 +1,4 @@
+import styles from "./cssModules/timerControls.module.css"
 
 function TimerControls({setCountdownStarted, setSecondsRemaining, setMinutesRemaining, cookingOption}){
 
