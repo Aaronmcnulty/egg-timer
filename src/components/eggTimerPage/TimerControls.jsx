@@ -1,5 +1,5 @@
 
-function TimerControls({setCountdownStarted, setSecondsRemaining, setMinutesRemaining}){
+function TimerControls({setCountdownStarted, setSecondsRemaining, setMinutesRemaining, cookingOption}){
 
     const handleStartClick = () => {
         setCountdownStarted(true)
@@ -20,9 +20,9 @@ function TimerControls({setCountdownStarted, setSecondsRemaining, setMinutesRema
     return(
         <div>
             <div>
-                <button value={360} onClick={handleTimerClick}>Runny Yolk</button>
-                <button value={480} onClick={handleTimerClick}>Soft Boiled</button>
-                <button value={600} onClick={handleTimerClick}>Hard Boiled</button>
+                {cookingOption && cookingOption.map((option) => {
+                  return  <button key={option.type} onClick={handleTimerClick} value={option.time}>{option.type}</button>
+                })}
             </div>
 
             <button onClick={handleStartClick}>Start</button>

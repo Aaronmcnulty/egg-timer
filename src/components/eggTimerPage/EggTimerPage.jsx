@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import CountDownDisplay from "./CountdownDisplay";
 import TimerControls from "./TimerControls";
+import { cookingOptions } from "./cookingOptions";
 
 function EggTimerPage(){
 
     const [countdownStarted, setCountdownStarted] = useState(false)
-    const [minutesRemaining, setMinutesRemaining] = useState(3)
+    const [minutesRemaining, setMinutesRemaining] = useState(0)
     const [secondsRemaining, setSecondsRemaining] = useState(0)
-    const [cookingOption, setCookingOption] = useState('Boiled')
+    const [cookingOption, setCookingOption] = useState(cookingOptions[0])
 
     useEffect(() => {
         if(countdownStarted){
@@ -27,21 +28,20 @@ function EggTimerPage(){
     }, [countdownStarted, secondsRemaining, minutesRemaining])
 
     const handleCookingChange = (event) => {
-        setCookingOption(event.target.value)
+        setCookingOption(cookingOptions[event.target.value])
     }
-
 
     return(
         <div>
             <h1>Egg Page</h1>
             <select onChange={handleCookingChange}>
-                <option value="Boiled">Boiled</option>
-                <option value="Poached">Poached</option>
+                <option value={0}>Boiled</option>
+                <option value={1}>Poached</option>
             </select>
-            <h4>{cookingOption} Egg Timer.</h4>
+            <h4> Egg Timer</h4>
             <CountDownDisplay />
             <p>{minutesRemaining} {secondsRemaining}</p>
-            <TimerControls setMinutesRemaining={setMinutesRemaining} setCountdownStarted={setCountdownStarted} setSecondsRemaining={setSecondsRemaining}/>
+            <TimerControls cookingOption={cookingOption} setMinutesRemaining={setMinutesRemaining} setCountdownStarted={setCountdownStarted} setSecondsRemaining={setSecondsRemaining}/>
         </div>
     )
 }
