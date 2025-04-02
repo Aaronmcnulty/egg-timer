@@ -4,7 +4,6 @@ function EggTimerPage(){
 
     return(
         <div>
-            <Navbar />
             <h1>Egg Page</h1>
         </div>
     )

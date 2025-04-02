@@ -6,7 +6,7 @@ function LandingPage(){
         <div>
 
             <h1>Landing Page</h1>
-            <Link to="egg-timer">Enter</Link>
+            <Link to="home">Enter</Link>
         </div>
     )
 }

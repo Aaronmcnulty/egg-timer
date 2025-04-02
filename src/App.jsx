@@ -1,13 +1,15 @@
 
 import './App.css'
-import LandingPage from './components/landingPage/LandingPage'
+import EggTimerPage from './components/eggTimerPage/EggTimerPage'
+import Navbar from './components/navigation/Navbar'
 
 function App() {
 
   return (
-    <>
-     <LandingPage />
-    </>
+    <div>
+      <Navbar />
+     <EggTimerPage />
+    </div>
   )
 }
 
