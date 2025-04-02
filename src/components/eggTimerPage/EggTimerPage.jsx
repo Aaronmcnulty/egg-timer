@@ -6,17 +6,23 @@ function EggTimerPage(){
 
     const [countdownStarted, setCountdownStarted] = useState(false)
     const [minutesRemaining, setMinutesRemaining] = useState(3)
-    const [secondsRemaining, setSecondsRemaining] = useState(120)
+    const [secondsRemaining, setSecondsRemaining] = useState(0)
 
     useEffect(() => {
+        if(countdownStarted){
         const key = setInterval(() => {
-            if(countdownStarted && secondsRemaining > 0){
-                setSecondsRemaining(secondsRemaining => secondsRemaining -1)
-            }
+            
+                if(secondsRemaining > 0){
+                    setSecondsRemaining(secondsRemaining => secondsRemaining -1)
+                } else if (minutesRemaining > 0 && secondsRemaining == 0){
+                    setSecondsRemaining(secondsRemaining => secondsRemaining +59)
+                    setMinutesRemaining(minutesRemaining => minutesRemaining -1)
+                }
         }, 1000)
         return () => {
             clearInterval(key);
           };
+        }
     }, [countdownStarted, secondsRemaining])
 
     return(
@@ -24,7 +30,7 @@ function EggTimerPage(){
             <h1>Egg Page</h1>
             <CountDownDisplay />
             <TimerControls setCountdownStarted={setCountdownStarted} setSecondsRemaining={setSecondsRemaining}/>
-            <p>{secondsRemaining}</p>
+            <p>{minutesRemaining} {secondsRemaining}</p>
         </div>
     )
 }
