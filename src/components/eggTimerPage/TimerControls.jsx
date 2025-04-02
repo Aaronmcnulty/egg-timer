@@ -1,12 +1,12 @@
 
-function TimerControls({setCountdownStarted, setTimeRemaining}){
+function TimerControls({setCountdownStarted, setSecondsRemaining}){
 
     const handleStartClick = () => {
         setCountdownStarted(true)
     }
 
     const handleTimerClick = (event) => {
-        setTimeRemaining(event.target.value)
+        setSecondsRemaining(event.target.value)
     }
 
     const handleStopClick = () => {

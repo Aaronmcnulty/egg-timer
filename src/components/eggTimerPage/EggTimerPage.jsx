@@ -1,32 +1,30 @@
 import { useEffect, useState } from "react";
-import Navbar from "../navigation/Navbar";
 import CountDownDisplay from "./CountdownDisplay";
 import TimerControls from "./TimerControls";
 
 function EggTimerPage(){
 
     const [countdownStarted, setCountdownStarted] = useState(false)
-    const [timeRemaining, setTimeRemaining] = useState(120)
-    const [chosenTime, setChosenTime] = useState(0)
-    
+    const [minutesRemaining, setMinutesRemaining] = useState(3)
+    const [secondsRemaining, setSecondsRemaining] = useState(120)
+
     useEffect(() => {
-       if(countdownStarted){
         const key = setInterval(() => {
-            setTimeRemaining(timeRemaining => timeRemaining -1)
+            if(countdownStarted && secondsRemaining > 0){
+                setSecondsRemaining(secondsRemaining => secondsRemaining -1)
+            }
         }, 1000)
-        
         return () => {
             clearInterval(key);
           };
-       }
-    }, [countdownStarted])
+    }, [countdownStarted, secondsRemaining])
 
     return(
         <div>
             <h1>Egg Page</h1>
             <CountDownDisplay />
-            <TimerControls setCountdownStarted={setCountdownStarted} setTimeRemaining={setTimeRemaining}/>
-            <p>{timeRemaining}</p>
+            <TimerControls setCountdownStarted={setCountdownStarted} setSecondsRemaining={setSecondsRemaining}/>
+            <p>{secondsRemaining}</p>
         </div>
     )
 }
