@@ -1,24 +1,28 @@
 
-function TimerControls({setCountdownStarted, setSecondsRemaining}){
+function TimerControls({setCountdownStarted, setSecondsRemaining, setMinutesRemaining}){
 
     const handleStartClick = () => {
         setCountdownStarted(true)
     }
 
     const handleTimerClick = (event) => {
-        setSecondsRemaining(event.target.value)
+        const t = Math.floor(event.target.value / 60)
+        setMinutesRemaining(t)
+        const o = event.target.value - (60 * t)
+        setSecondsRemaining(o)
     }
 
     const handleStopClick = () => {
         setCountdownStarted(false)
     }
+
+
     return(
         <div>
-
             <div>
-                <button value={120} onClick={handleTimerClick}>3:00</button>
-                <button value={150} onClick={handleTimerClick}>3:30</button>
-                <button value={180} onClick={handleTimerClick}>4:00</button>
+                <button value={360} onClick={handleTimerClick}>Runny Yolk</button>
+                <button value={480} onClick={handleTimerClick}>Soft Boiled</button>
+                <button value={600} onClick={handleTimerClick}>Hard Boiled</button>
             </div>
 
             <button onClick={handleStartClick}>Start</button>
