@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./cssModules/countDownDisplay.module.css";
+import PropTypes from "prop-types";
 
 function CountDownDisplay({ minutesRemaining, secondsRemaining }) {
   const [correctSeconds, setCorrectSeconds] = useState("");
@@ -10,7 +11,7 @@ function CountDownDisplay({ minutesRemaining, secondsRemaining }) {
     } else {
       setCorrectSeconds(secondsRemaining);
     }
-  });
+  }, [secondsRemaining]);
 
   return (
     <div>
@@ -19,6 +20,11 @@ function CountDownDisplay({ minutesRemaining, secondsRemaining }) {
       </p>
     </div>
   );
+}
+
+CountDownDisplay.propTypes = {
+  minutesRemaining: PropTypes.number, 
+  secondsRemaining: PropTypes.number, 
 }
 
 export default CountDownDisplay;

@@ -1,4 +1,5 @@
 import styles from "./cssModules/timerControls.module.css";
+import PropTypes from 'prop-types'; // ES6
 
 function TimerControls({
   setCountdownStarted,
@@ -42,6 +43,13 @@ function TimerControls({
       <button onClick={handleStopClick}>Stop</button>
     </div>
   );
+}
+
+TimerControls.propTypes = {
+  setCountdownStarted: PropTypes.bool.isRequired,
+  setSecondsRemaining: PropTypes.func.isRequired,
+  setMinutesRemaining: PropTypes.func.isRequired,
+  cookingOption: PropTypes.object.isRequired
 }
 
 export default TimerControls;
