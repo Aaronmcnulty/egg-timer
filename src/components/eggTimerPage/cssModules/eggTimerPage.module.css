@@ -1,3 +1,13 @@
+
+
+
 .eggTimerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 3/4;
+  border-radius: 100% / 125% 125% 80% 80%;
   background-color: rgb(252, 255, 236);
+  width: 100%;
 }

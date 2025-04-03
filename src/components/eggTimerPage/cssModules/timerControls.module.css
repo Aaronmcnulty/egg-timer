@@ -1,4 +1,20 @@
-button {
-  background-color: beige;
-  color: black;
+
+
+.timeOptionButtons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  width:80%;
+}
+
+.timerControls{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+button{
+  padding:0.5em;
+  background-color: gold;
+  color:white;
 }

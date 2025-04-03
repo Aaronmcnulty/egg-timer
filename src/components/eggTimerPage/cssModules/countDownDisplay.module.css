@@ -1,0 +1,12 @@
+
+.timeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    margin:1em;
+    padding:1em;
+    border-radius: 50%;
+    width:37%;
+    height: 30%;
+}

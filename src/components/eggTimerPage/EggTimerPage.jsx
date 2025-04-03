@@ -33,12 +33,12 @@ function EggTimerPage() {
 
   return (
     <div class={styles.eggTimerContainer}>
-      <h1>Egg Page</h1>
+      <h4>Egg Timer</h4>
       <select onChange={handleCookingChange}>
         <option value={0}>Boiled</option>
         <option value={1}>Poached</option>
       </select>
-      <h4> Egg Timer</h4>
+      
       <CountDownDisplay
         minutesRemaining={minutesRemaining}
         secondsRemaining={secondsRemaining}
