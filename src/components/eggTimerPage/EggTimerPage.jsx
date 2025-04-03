@@ -39,8 +39,7 @@ function EggTimerPage(){
                 <option value={1}>Poached</option>
             </select>
             <h4> Egg Timer</h4>
-            <CountDownDisplay />
-            <p>{minutesRemaining} {secondsRemaining}</p>
+            <CountDownDisplay minutesRemaining={minutesRemaining} secondsRemaining={secondsRemaining}/>
             <TimerControls cookingOption={cookingOption} setMinutesRemaining={setMinutesRemaining} setCountdownStarted={setCountdownStarted} setSecondsRemaining={setSecondsRemaining}/>
         </div>
     )
