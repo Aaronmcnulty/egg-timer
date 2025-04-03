@@ -1,4 +1,4 @@
-import styles from "./cssModules/navErrorPage.module.css"
+import styles from "./cssModules/navErrorPage.module.css";
 
 import { Link } from "react-router-dom";
 
