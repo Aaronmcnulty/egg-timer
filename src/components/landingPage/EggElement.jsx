@@ -5,7 +5,7 @@ function EggElement() {
 
   return (
 
-    <div>
+    <div className={styles.eggContainter}>
       <div className={styles.egg}>
         <div className={styles.eggHighlight}></div>
         <div className={styles.yolk}>
