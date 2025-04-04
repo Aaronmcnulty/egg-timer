@@ -23,7 +23,7 @@ function TimerControls({
   };
 
   return (
-    <>
+    <div className={styles.buttonsContainer}>
       <div className={styles.timeOptionButtons}>
         {cookingOption &&
           cookingOption.map((option) => {
@@ -38,12 +38,12 @@ function TimerControls({
             );
           })}
       </div >
-        <div className={styles.timerControls}>
+        <div className={styles.startStopButtons}>
           <button onClick={handleStartClick}>Start</button>
           <button onClick={handleStopClick}>Stop</button>
         </div>
       
-    </>
+    </div>
   );
 }
 

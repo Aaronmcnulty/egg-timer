@@ -35,7 +35,7 @@ function EggTimerPage() {
     <div className={styles.eggTimerContainer}>
       <h1 className={styles.mainTitle}>How Do You Like Your Eggs?</h1>
       <div className={styles.cookingSelectContainer}>
-        <label aria-label="Choose Egg Type">What type of eggs are you cooking?</label>
+        
         <select onChange={handleCookingChange}>
           <option value={0}>Boiled</option>
           <option value={1}>Poached</option>

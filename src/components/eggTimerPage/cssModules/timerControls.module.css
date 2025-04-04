@@ -1,16 +1,18 @@
 
-
+.buttonsContainer{
+  display: flex;
+  flex-direction: column;
+}
 .timeOptionButtons{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em;
-  width:90%;
+  width:100%;
 }
 
-.timerControls{
+.startStopButtons{
   display: flex;
   justify-content: space-evenly;
-  width:90%;
+  width:100%;
 }
 
 button{
