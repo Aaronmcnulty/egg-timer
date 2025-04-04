@@ -32,6 +32,7 @@
 }
 
 .mainTitle{
+  text-align: center;
   animation: slideDown 2s;
 }
 @keyframes appear {

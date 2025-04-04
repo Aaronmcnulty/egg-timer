@@ -16,6 +16,7 @@
 
 .timeDisplay{
     color: white;
+    font-size: xx-large;
 }
 
 @keyframes grow {

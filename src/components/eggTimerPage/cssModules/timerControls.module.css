@@ -14,7 +14,9 @@
 }
 
 button{
-  padding:1em;
+  padding:0.2em 0.5em 0.2em 0.5em;
   background-color: gold;
   color:white;
+  border: solid goldenrod;
+  font-size: large;
 }
