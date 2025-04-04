@@ -10,14 +10,13 @@
   }
   
   body {
+    height: 100svh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items:center;
     padding:0em;
     margin:0px;
     min-width: 320px;
-    min-height: 100svh;
     background-color: powderblue;
   }
   

@@ -4,17 +4,17 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
-  width:80%;
+  width:90%;
 }
 
 .timerControls{
   display: flex;
-  justify-content: center;
-  align-content: flex-end;
+  justify-content: space-evenly;
+  width:90%;
 }
 
 button{
-  padding:0.5em;
+  padding:1em;
   background-color: gold;
   color:white;
 }

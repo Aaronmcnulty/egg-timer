@@ -33,24 +33,30 @@ function EggTimerPage() {
 
   return (
     <div className={styles.eggTimerContainer}>
-      <div className={styles.eggShape}>
-      <h4>Egg Timer</h4>
-      <select onChange={handleCookingChange}>
-        <option value={0}>Boiled</option>
-        <option value={1}>Poached</option>
-      </select>
+      <h1>Egg Timer</h1>
+      <div className={styles.cookingSelectContainer}>
+        <label aria-label="Choose Egg Type">What type of eggs are you cooking?</label>
+        <select onChange={handleCookingChange}>
+          <option value={0}>Boiled</option>
+          <option value={1}>Poached</option>
+        </select>
+      </div>
       
-      <CountDownDisplay
-        minutesRemaining={minutesRemaining}
-        secondsRemaining={secondsRemaining}
-      />
+      <div className={styles.eggShape}>
+
+
+        <CountDownDisplay
+          minutesRemaining={minutesRemaining}
+          secondsRemaining={secondsRemaining}
+        />
+      </div>
+
       <TimerControls
         cookingOption={cookingOption}
         setMinutesRemaining={setMinutesRemaining}
         setCountdownStarted={setCountdownStarted}
         setSecondsRemaining={setSecondsRemaining}
       />
-    </div>
     </div>
   );
 }

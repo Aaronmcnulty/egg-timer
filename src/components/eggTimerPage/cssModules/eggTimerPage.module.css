@@ -2,14 +2,18 @@
 
 
 .eggTimerContainer {
-  display: flex;
+  display: grid;
+  grid-template-rows: 2fr 1fr 4fr 2fr;
+  place-items:center;
+  flex-direction: column;
   justify-content: center;
-  height:100%;
-  width:100%;
+  align-items: center;
+  min-height: 90%;
 }
 
 .eggShape{
   display: flex;
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -17,6 +21,10 @@
   border-radius: 100% / 125% 125% 80% 80%;
   background-color: rgb(252, 255, 236);
   border: solid;
-  height:95%;
-  width:95%;
+  margin: 1em;
+  height: 100%;
+}
+
+.cookingSelectContainer{
+  margin: 1em;
 }
