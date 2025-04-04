@@ -15,7 +15,7 @@ function CountDownDisplay({ minutesRemaining, secondsRemaining }) {
 
   return (
     <div className={styles.timeContainer}>
-      <p>
+      <p className={styles.timeDisplay}>
        {minutesRemaining}:{correctSeconds}
       </p>
     </div>

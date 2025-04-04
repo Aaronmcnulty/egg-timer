@@ -9,4 +9,21 @@
     border-radius: 50%;
     width:37%;
     height: 30%;
+    border:double 0.5em goldenrod;
+    
+    
+}
+
+.timeDisplay{
+    color: white;
+}
+
+@keyframes grow {
+    0%{
+        scale:0;
+    }
+
+    100%{
+        scale:1;
+    }
 }

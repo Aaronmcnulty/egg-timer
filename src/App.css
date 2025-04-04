@@ -18,6 +18,8 @@
     margin:0px;
     min-width: 320px;
     background-color: powderblue;
+
+  overflow: hidden;
   }
   
   h1 {

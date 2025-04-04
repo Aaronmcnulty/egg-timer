@@ -10,9 +10,9 @@
   align-items: center;
   min-height: 90%;
 }
-
+ 
 .eggShape{
-  display: flex;
+  display: flex; 
   
   flex-direction: column;
   justify-content: center;
@@ -20,11 +20,49 @@
   aspect-ratio: 3/4;
   border-radius: 100% / 125% 125% 80% 80%;
   background-color: rgb(252, 255, 236);
-  border: solid;
+  border: solid 10px goldenrod;
   margin: 1em;
   height: 100%;
+  animation: appear 2s; 
 }
 
 .cookingSelectContainer{
   margin: 1em;
+  animation: slideInRight 2s;
+}
+
+.mainTitle{
+  animation: slideDown 2s;
+}
+@keyframes appear {
+  0%{
+    opacity: 0; 
+    scale:0;
+  }
+
+  50%{
+    scale:1.1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(350px);
+  }
+
+  100%{
+  }
+}
+
+@keyframes slideDown {
+  
+
+  0%{
+    transform: translateY(-350px);
+  }
 }
