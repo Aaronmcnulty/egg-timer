@@ -3,7 +3,7 @@
 
 .eggTimerContainer {
   display: grid;
-  grid-template-rows: 2fr 1fr 4fr 2fr;
+  grid-template-rows: 2fr 2fr 4fr 2fr;
   place-items:center;
   flex-direction: column;
   justify-content: center;
@@ -27,13 +27,19 @@
 }
 
 .cookingSelectContainer{
-  margin: 1em;
+  font-family: "Borel", cursive;
   animation: slideInRight 2s;
+  font-size: large;
+  text-align: center;
+  text-wrap:wrap;
+  margin:0.2em;
 }
 
 .mainTitle{
+  font-family: "Borel", cursive;
   text-align: center;
   animation: slideDown 2s;
+    color: rgb(0, 0, 0);
 }
 @keyframes appear {
   0%{

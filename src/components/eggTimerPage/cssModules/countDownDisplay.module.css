@@ -17,6 +17,8 @@
 .timeDisplay{
     color: white;
     font-size: xx-large;
+    font-family: "Doto", sans-serif;
+    font-weight: 800;
 }
 
 @keyframes grow {
