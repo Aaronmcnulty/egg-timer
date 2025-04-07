@@ -16,15 +16,15 @@ function CountDownDisplay({ minutesRemaining, secondsRemaining }) {
   return (
     <div className={styles.timeContainer}>
       <p className={styles.timeDisplay}>
-       {minutesRemaining}:{correctSeconds}
+        {minutesRemaining}:{correctSeconds}
       </p>
     </div>
   );
 }
 
 CountDownDisplay.propTypes = {
-  minutesRemaining: PropTypes.number, 
-  secondsRemaining: PropTypes.number, 
-}
+  minutesRemaining: PropTypes.number,
+  secondsRemaining: PropTypes.number,
+};
 
 export default CountDownDisplay;

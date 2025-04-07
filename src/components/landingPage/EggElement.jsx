@@ -1,26 +1,19 @@
-import styles from "./cssModules/eggElement.module.css"
-
+import styles from "./cssModules/eggElement.module.css";
 
 function EggElement() {
-
   return (
-
     <div className={styles.eggContainter}>
       <div className={styles.egg}>
         <div className={styles.eggHighlight}></div>
         <div className={styles.yolk}>
           <div className={styles.yolkHighlight}>
-            <div className={styles.yolkHighlightInner}>
-
-            </div>
+            <div className={styles.yolkHighlightInner}></div>
           </div>
-          <div className={styles.yolkShadow}>
-
-          </div>
+          <div className={styles.yolkShadow}></div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default EggElement;

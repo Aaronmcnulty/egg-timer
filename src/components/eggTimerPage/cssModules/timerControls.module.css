@@ -1,16 +1,15 @@
-
-.timeOptionButtons{
+.timeOptionButtons {
   display: flex;
   flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.timerButton{
-  padding:1em 0.5em 1em 0.5em;
+.timerButton {
+  padding: 1em 0.5em 1em 0.5em;
   margin: 0px 5px 0px 5px;
   background-color: white;
-  color:goldenrod;
+  color: goldenrod;
   border: solid goldenrod;
   font-size: small;
   line-height: 0em;
@@ -20,8 +19,7 @@
   font-family: "Borel", cursive;
 }
 
-
-.timerButton:active{
+.timerButton:active {
   box-shadow: none;
   transform: translateY(5px);
 }

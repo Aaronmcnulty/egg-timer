@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./cssModules/landingPage.module.css"
+import styles from "./cssModules/landingPage.module.css";
 import EggElement from "./EggElement";
 
 function LandingPage() {
