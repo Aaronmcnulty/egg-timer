@@ -1,4 +1,4 @@
-
+import styles from "./cssModules/startStopControls.module.css"
 
 function StartStopControls({setCountdownStarted}){
 
@@ -12,9 +12,9 @@ function StartStopControls({setCountdownStarted}){
 
 
     return(
-        <div >
-            <button onClick={handleStartClick}>Start</button>
-            <button onClick={handleStopClick}>Stop</button>
+        <div className={styles.startStopContainer}>
+            <button className={styles.startStopButton} onClick={handleStartClick}>Start</button>
+            <button className={styles.startStopButton} onClick={handleStopClick}>Stop</button>
         </div>
     )
 }
