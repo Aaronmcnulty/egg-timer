@@ -1,24 +1,42 @@
 h1 {
   font-size: 1.5em;
   line-height: 1;
+  color: black;
+}
+
+.mainTitle{
+  flex-grow: 3;
+  font-family: "Borel", cursive;
+  text-align: center;
+  animation: slideDown 2s;
 }
 
 select{
+  font-family: "Borel", cursive;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
   border:none;
   border-radius: 5px;
   background-color: powderblue;
   font-size: large;
   text-align: center;
   color: goldenrod;
-  font-weight: 1000;
+  font-weight: 750;
   letter-spacing: 2px;
+  
 }
+
+option{
+  color: goldenrod;
+  font-weight: 750;
+}
+
 .eggTimerContainer {
   display: grid;
-  grid-template-rows: 1fr 0.5fr 1fr 4fr 1fr;
+  grid-template-rows: 1fr 0.6fr 1.4fr 4fr 1.4fr;
   place-items:center;
   justify-content: center;
-  align-items: center;
   min-height: 100%;
 }
  
@@ -34,6 +52,8 @@ select{
   margin: 1em;
   height: 100%;
   animation: appear 2s; 
+  box-shadow: 0px 5px 5px 0px rgb(139, 177, 182);
+  
 }
 
 .cookingSelectContainer{
@@ -42,13 +62,7 @@ select{
   margin:0.2em;
 }
 
-.mainTitle{
-  flex-grow: 3;
-  font-family: "Borel", cursive;
-  text-align: center;
-  animation: slideDown 2s;
-  color: rgb(0, 0, 0);
-}
+
 
 
 
@@ -82,5 +96,19 @@ select{
 
   0%{
     transform: translateY(-350px);
+  }
+}
+
+@keyframes shake {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(5deg);
+  }
+
+  100%{
+    transform: rotate(-5deg);
   }
 }

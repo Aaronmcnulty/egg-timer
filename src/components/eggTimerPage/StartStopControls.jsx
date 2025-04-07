@@ -13,8 +13,8 @@ function StartStopControls({setCountdownStarted}){
 
     return(
         <div className={styles.startStopContainer}>
-            <button className={styles.startStopButton} onClick={handleStartClick}>Start</button>
-            <button className={styles.startStopButton} onClick={handleStopClick}>Stop</button>
+            <button className={styles.startStopButton} onClick={handleStartClick}>START</button>
+            <button className={styles.startStopButton} onClick={handleStopClick}>STOP</button>
         </div>
     )
 }

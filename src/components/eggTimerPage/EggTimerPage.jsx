@@ -38,8 +38,8 @@ function EggTimerPage() {
       <div className={styles.cookingSelectContainer}>
         
         <select  onChange={handleCookingChange}>
-          <option value={0}>Boiled</option>
-          <option value={1}>Poached</option>
+          <option value={0}>BOILED</option>
+          <option value={1}>POACHED</option>
         </select>
       </div>
 

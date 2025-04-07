@@ -1,14 +1,14 @@
 const boiledEggTimes = [
   {
-    type: "Runny Yolk",
+    type: "RUNNY YOLK",
     time: 360,
   },
   {
-    type: "Soft Boiled",
+    type: "SOFT BOILED",
     time: 480,
   },
   {
-    type: "Hard Boiled",
+    type: "HARD BOILED",
     time: 600,
   },
 ];

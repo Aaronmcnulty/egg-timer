@@ -12,13 +12,14 @@
 .timerButton{
   padding:1em 0.5em 1em 0.5em;
   margin: 0px 5px 0px 5px;
-  background-color: powderblue;
+  background-color: white;
   color:goldenrod;
   border: solid goldenrod;
-  font-size: large;
+  font-size: small;
   font-weight: 1000;
   box-shadow: 0px 5px 1px 0px;
   border-radius: 8px;
+  font-family: "Borel", cursive;
 }
 
 
