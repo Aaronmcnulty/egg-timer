@@ -8,9 +8,10 @@ import StartStopControls from "./StartStopControls";
 
 function EggTimerPage() {
   const [countdownStarted, setCountdownStarted] = useState(false);
-  const [minutesRemaining, setMinutesRemaining] = useState(0);
-  const [secondsRemaining, setSecondsRemaining] = useState(0);
+  const [minutesRemaining, setMinutesRemaining] = useState(1);
+  const [secondsRemaining, setSecondsRemaining] = useState(1);
   const [cookingOption, setCookingOption] = useState(cookingOptions[0]);
+  const [timerFinished, setTimerFinished] = useState(false)
 
   useEffect(() => {
     if (countdownStarted) {
@@ -32,6 +33,13 @@ function EggTimerPage() {
     setCookingOption(cookingOptions[event.target.value]);
   };
 
+  useEffect(() => {
+    if(minutesRemaining == 0 && secondsRemaining == 0){
+      setTimerFinished(true)
+      console.log('hi')
+    }
+  }, [minutesRemaining, secondsRemaining])
+
   return (
     <div className={styles.eggTimerContainer}>
       <h1 className={styles.mainTitle}>How Do You Like Your Eggs?</h1>
@@ -49,7 +57,7 @@ function EggTimerPage() {
         setSecondsRemaining={setSecondsRemaining}
       />
       
-      <div className={styles.eggShape}>
+      <div className={!timerFinished ? styles.eggShape : styles.eggShapeAlarm}>
         <CountDownDisplay
           minutesRemaining={minutesRemaining}
           secondsRemaining={secondsRemaining}
@@ -57,8 +65,11 @@ function EggTimerPage() {
       </div>
 
       <StartStopControls 
-        setCountdownStarted={setCountdownStarted}/>
-      
+        setCountdownStarted={setCountdownStarted}
+        countdownStarted={countdownStarted}
+        setTimerFinished={setTimerFinished}
+        />
+        
     </div>
   );
 }

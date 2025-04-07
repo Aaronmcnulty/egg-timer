@@ -15,15 +15,15 @@ const boiledEggTimes = [
 
 const poachedEggTimes = [
   {
-    type: "Runny Yolk",
+    type: "RUNNY YOLK",
     time: 300,
   },
   {
-    type: "Gooey Yolk",
+    type: "GOOEY YOLK",
     time: 360,
   },
   {
-    type: "Hard Yolk",
+    type: "HARD YOLK",
     time: 600,
   },
 ];
