@@ -11,10 +11,12 @@
     height: 30%;
     border:double 0.5em #daa520;
     box-shadow:inset 0px -5px 5px 0px goldenrod;
-    
+  
 }
 
 .timeDisplay{
+    min-width: 100%;
+    text-align: center;
     color: black;
     font-size: xx-large;
     font-family: "Doto", sans-serif;
@@ -24,7 +26,7 @@
     border-radius: 15px;
     padding:5px;
     background-color:darkseagreen;
-    box-shadow: inset 1px 1px 10px 1px;
+    box-shadow: inset 1px 1px 10px 1px rgb(21, 31, 4);
 }
 
 @keyframes grow {

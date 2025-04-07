@@ -1,12 +1,9 @@
 
-.buttonsContainer{
-  display: flex;
-  flex-direction: column;
-}
 .timeOptionButtons{
   display: flex;
+  flex-grow: 1;
+  flex-direction: row;
   justify-content: space-between;
-  width:100%;
 }
 
 .timerButton{
@@ -16,6 +13,7 @@
   color:goldenrod;
   border: solid goldenrod;
   font-size: small;
+  line-height: 0em;
   font-weight: 1000;
   box-shadow: 0px 5px 1px 0px;
   border-radius: 8px;

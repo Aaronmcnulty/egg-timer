@@ -7,9 +7,7 @@ function TimerControls({
   setMinutesRemaining,
   cookingOption,
 }) {
-  const handleStartClick = () => {
-    setCountdownStarted(true);
-  };
+  
 
   const handleTimerClick = (event) => {
     const t = Math.floor(event.target.value / 60);
@@ -18,12 +16,9 @@ function TimerControls({
     setSecondsRemaining(o);
   };
 
-  const handleStopClick = () => {
-    setCountdownStarted(false);
-  };
+  
 
   return (
-    <div className={styles.buttonsContainer}>
       <div className={styles.timeOptionButtons}>
         {cookingOption &&
           cookingOption.map((option) => {
@@ -39,7 +34,7 @@ function TimerControls({
             );
           })}
       </div >
-    </div>
+    
   );
 }
 

@@ -1,11 +1,11 @@
 h1 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1;
-  color: black;
+  color: rgb(38, 57, 63);
+  text-decoration: underline;
 }
 
 .mainTitle{
-  flex-grow: 3;
   font-family: "Borel", cursive;
   text-align: center;
   animation: slideDown 2s;
