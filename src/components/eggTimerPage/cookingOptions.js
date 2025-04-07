@@ -1,7 +1,7 @@
 const boiledEggTimes = [
   {
     type: "RUNNY YOLK",
-    time: 360,
+    time: 2,
   },
   {
     type: "SOFT BOILED",
