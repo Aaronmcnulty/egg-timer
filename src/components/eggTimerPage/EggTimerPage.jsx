@@ -3,6 +3,7 @@ import CountDownDisplay from "./CountDownDisplay";
 import TimerControls from "./TimerControls";
 import { cookingOptions } from "./cookingOptions";
 import styles from "./cssModules/eggTimerPage.module.css";
+import StartStopControls from "./StartStopControls";
 
 
 function EggTimerPage() {
@@ -36,27 +37,28 @@ function EggTimerPage() {
       <h1 className={styles.mainTitle}>How Do You Like Your Eggs?</h1>
       <div className={styles.cookingSelectContainer}>
         
-        <select onChange={handleCookingChange}>
+        <select  onChange={handleCookingChange}>
           <option value={0}>Boiled</option>
           <option value={1}>Poached</option>
         </select>
       </div>
+
+      <TimerControls
+        cookingOption={cookingOption}
+        setMinutesRemaining={setMinutesRemaining}
+        setSecondsRemaining={setSecondsRemaining}
+      />
       
       <div className={styles.eggShape}>
-
-
         <CountDownDisplay
           minutesRemaining={minutesRemaining}
           secondsRemaining={secondsRemaining}
         />
       </div>
 
-      <TimerControls
-        cookingOption={cookingOption}
-        setMinutesRemaining={setMinutesRemaining}
-        setCountdownStarted={setCountdownStarted}
-        setSecondsRemaining={setSecondsRemaining}
-      />
+      <StartStopControls 
+        setCountdownStarted={setCountdownStarted}/>
+      
     </div>
   );
 }
