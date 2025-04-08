@@ -1,0 +1,48 @@
+
+.instructionsPage{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 2fr;
+    place-items: center;
+}
+
+.mainTitle{
+  font-family: "Borel", cursive;
+}
+
+.cookingInstructionsContainer{
+    height: 100%;
+    padding: 1em;
+}
+
+.instructionsList{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+}
+
+.listEntry{
+    list-style:circle;
+}
+
+.eggTimerButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 3/4;
+        border-radius: 100% / 125% 125% 80% 80%;
+        background-color: rgb(252, 255, 236);
+        border: solid goldenrod;
+        box-shadow: inset 0px -5px 8px 0px rgb(189, 184, 167);
+        text-align: center;
+        color: goldenrod;
+        font-weight: 1000;
+        font-size: small;
+        font-family: "Borel", cursive;
+        width: 20%;
+        text-decoration: underline dotted 5px;
+        transition: 0.2s;
+}

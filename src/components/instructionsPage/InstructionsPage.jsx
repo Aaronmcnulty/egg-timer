@@ -16,8 +16,8 @@ function InstructionsPage({}){
 
 
     return(
-        <div>
-            <div>
+        <div className={styles.instructionsPage}>
+            <div className={styles.mainTitle}>
                 <h1>Preparing to Cook:</h1>
             </div>
             <div className={styles.cookingSelectContainer}>
@@ -28,13 +28,13 @@ function InstructionsPage({}){
             </div>
 
             <div className={styles.cookingInstructionsContainer}>
-                <ul>
+                <ul className={styles.instructionsList}>
                 {cookingInstructions[instructionsOption] && cookingInstructions[instructionsOption].map(entry => {
-                    return <li>{entry}</li>
+                    return <li className={styles.listEntry}>{entry}</li>
                 })}
                 </ul>
             </div>
-            <Link to="/home/timer">I'm ready</Link>
+            <Link className={styles.eggTimerButton} to="/home/timer">I'm ready</Link>
         </div>
     )
 }
