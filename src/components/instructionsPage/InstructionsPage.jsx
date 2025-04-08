@@ -2,6 +2,7 @@ import styles from "./cssModules/instructionsPage.module.css"
 import { cookingOptions } from "../eggTimerPage/cookingOptions";
 import { cookingInstructions } from "../eggTimerPage/cookingOptions";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function InstructionsPage({}){
@@ -16,6 +17,9 @@ function InstructionsPage({}){
 
     return(
         <div>
+            <div>
+                <h1>Preparing to Cook:</h1>
+            </div>
             <div className={styles.cookingSelectContainer}>
                     <select onChange={handleCookingChange}>
                       <option value={0}>BOILED</option>
@@ -30,6 +34,7 @@ function InstructionsPage({}){
                 })}
                 </ul>
             </div>
+            <Link to="/home/timer">I'm ready</Link>
         </div>
     )
 }

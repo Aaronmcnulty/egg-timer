@@ -5,8 +5,9 @@ import EggElement from "./EggElement";
 function LandingPage() {
   return (
     <div className={styles.landingPageContainer}>
-      <Link to="home">Enter</Link>
-      <h1 className={styles.pageTitle}>Landing Page</h1>
+      <Link to="home/instructions">How To</Link>
+      <Link to="home/timer">Timer</Link>
+     <h1 className={styles.pageTitle}>Landing Page</h1>
       <EggElement />
     </div>
   );
