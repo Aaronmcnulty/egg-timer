@@ -1,12 +1,15 @@
 import styles from "./cssModules/instructionsPage.module.css"
 import { cookingOptions } from "../eggTimerPage/cookingOptions";
-import { cookingInstructionsBoiled } from "../eggTimerPage/cookingOptions";
+import { cookingInstructions } from "../eggTimerPage/cookingOptions";
+import { useState } from "react";
 
 
 function InstructionsPage({}){
 
+    const [instructionsOption, setInstructionsOption] = useState(0)
+
     const handleCookingChange = (event) => {
-        setCookingOption(cookingOptions[event.target.value]);
+        setInstructionsOption(event.target.value);
       };
 
 
@@ -20,8 +23,12 @@ function InstructionsPage({}){
                     </select>
             </div>
 
-            <div>
-                <p>{cookingInstructionsBoiled}</p>
+            <div className={styles.cookingInstructionsContainer}>
+                <ul>
+                {cookingInstructions[instructionsOption] && cookingInstructions[instructionsOption].map(entry => {
+                    return <li>{entry}</li>
+                })}
+                </ul>
             </div>
         </div>
     )

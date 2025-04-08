@@ -4,7 +4,7 @@ import TimerControls from "./TimerControls";
 import { cookingOptions } from "./cookingOptions";
 import styles from "./cssModules/eggTimerPage.module.css";
 import StartStopControls from "./StartStopControls";
-import { cookingInstructionsBoiled } from "./cookingOptions"
+import { cookingInstructions} from "./cookingOptions"
 
 
 function EggTimerPage() {
