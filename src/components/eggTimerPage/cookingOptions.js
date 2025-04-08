@@ -13,6 +13,12 @@ const boiledEggTimes = [
   },
 ];
 
+export const cookingInstructionsBoiled = [
+  
+  "Make sure the water is boiling before adding your eggs and starting the timer.",
+  
+];
+
 const poachedEggTimes = [
   {
     type: "RUNNY YOLK",
@@ -28,4 +34,4 @@ const poachedEggTimes = [
   },
 ];
 
-export const cookingOptions = [boiledEggTimes, poachedEggTimes];
+export const cookingOptions = [boiledEggTimes,  poachedEggTimes];
