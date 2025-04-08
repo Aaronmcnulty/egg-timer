@@ -13,6 +13,8 @@ const boiledEggTimes = [
   },
 ];
 
+
+
 const poachedEggTimes = [
   {
     type: "RUNNY YOLK",
@@ -28,4 +30,21 @@ const poachedEggTimes = [
   },
 ];
 
-export const cookingOptions = [boiledEggTimes, poachedEggTimes];
+const instructionsBoiled = [
+  
+  "Fill a saucepan with water and heat to 100 degrees",
+  "Make sure the water is boiling before adding your eggs and starting the timer.",
+  
+];
+
+const instructionsPoached = [
+  
+  "Fill a saucepan with water and heat to 100 degrees",
+  "Stir the water",
+  "Make sure the water is boiling before adding your eggs and starting the timer.",
+  
+];
+
+
+export const cookingOptions = [boiledEggTimes,  poachedEggTimes]
+export const cookingInstructions = [instructionsBoiled, instructionsPoached]

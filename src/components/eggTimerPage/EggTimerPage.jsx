@@ -4,6 +4,8 @@ import TimerControls from "./TimerControls";
 import { cookingOptions } from "./cookingOptions";
 import styles from "./cssModules/eggTimerPage.module.css";
 import StartStopControls from "./StartStopControls";
+import { cookingInstructions} from "./cookingOptions"
+
 
 function EggTimerPage() {
   const [countdownStarted, setCountdownStarted] = useState(false);
