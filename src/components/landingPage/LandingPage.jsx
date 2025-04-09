@@ -7,12 +7,38 @@ function LandingPage() {
   return (
     <div className={styles.landingPageContainer}>
       
-     <h1 className={styles.pageTitle}>Egg Time</h1>
+     
      
         <EggElement />
 
         <Navbar />
-      
+        <div className={styles.bubble}>
+
+        </div>
+        <div className={styles.bubbleTwo}>
+
+        </div>
+        <div className={styles.bubbleThree}>
+
+        </div>
+        <div className={styles.bubbleFour}>
+
+        </div>
+        <div className={styles.bubbleFive}>
+
+        </div>
+        <div className={styles.bubbleSix}>
+
+        </div>
+        <div className={styles.bubbleSeven}>
+
+        </div>
+        <div className={styles.bubbleEight}>
+
+        </div>
+        <div className={styles.bubbleNine}>
+
+        </div>
     </div>
   );
 }

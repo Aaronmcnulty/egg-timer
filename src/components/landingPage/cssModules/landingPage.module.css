@@ -1,4 +1,5 @@
 .landingPageContainer {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,3 +18,91 @@ h1{
   font-family: "Borel", cursive;
 }
 
+.bubble , .bubbleTwo , .bubbleThree, .bubbleFour, .bubbleFive, .bubbleSix, .bubbleSeven, .bubbleEight, .bubbleNine{
+	position: absolute;
+  z-index: 5;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: white;
+  border:rgba(255, 255, 255, 0.204) solid;
+	background: linear-gradient(to left, #c4ebedae, #9ad4e495);
+	box-shadow: 2px 5px 5px rgba(189, 226, 204, 0.2);
+	animation: rise 3s linear infinite;
+}
+
+.bubble{
+  top:1000px;
+  right:130px;
+	width: 70px;
+  height: 70px;
+}
+
+.bubbleTwo{
+  top:1600px;
+  right:50px;
+  animation-delay: 0.7s;
+	width: 60px;
+  height: 60px;
+}
+
+.bubbleThree{
+  top: 1600px;
+  right: 190px;
+}
+
+.bubbleFour{
+  top: 1600px;
+  right: 10px;
+  animation-delay: 1.7s;
+  width: 40px;
+  height: 40px;
+}
+
+.bubbleFive{
+  top: 1600px;
+  right: 30px;
+  animation-delay: 2.4s;
+  width: 30px;
+  height: 30px;
+}
+
+.bubbleSix{
+  top: 1600px;
+  right: 180px;
+  animation-delay: 3.4s;
+  width: 40px;
+  height: 40px;
+}
+
+.bubbleSeven{
+  top: 1600px;
+  right: 290px;
+  animation-delay: 4.5s;
+  width: 20px;
+  height: 20px;
+}
+
+.bubbleEight{
+  top: 1600px;
+  right: 80px;
+  width: 40px;
+  height: 40px;
+  animation: rise 2s linear infinite;
+}
+
+.bubbleNine{
+  top: 1000px;
+  right: 220px;
+  animation-delay: 4.3s;
+  width: 30px;
+  height: 40px;
+  animation: rise 2s linear infinite;
+}
+
+@keyframes rise {
+
+  100%{
+    transform: translateY(-2000px);
+  }
+}
