@@ -1,6 +1,7 @@
 import styles from "./cssModules/startStopControls.module.css";
 
 function StartStopControls({ setCountdownStarted, setTimerFinished }) {
+  
   const handleStartClick = () => {
     let isBoiling = confirm('Is the water already boiling?')
     
@@ -18,10 +19,10 @@ function StartStopControls({ setCountdownStarted, setTimerFinished }) {
 
   return (
     <div className={styles.startStopContainer}>
-      <button className={styles.startStopButton} onClick={handleStartClick}>
+      <button data-testid={'startButton'} className={styles.startStopButton} onClick={handleStartClick}>
         START
       </button>
-      <button className={styles.startStopButton} onClick={handleStopClick}>
+      <button data-testid={'stopButton'} className={styles.startStopButton} onClick={handleStopClick}>
         STOP
       </button>
     </div>
