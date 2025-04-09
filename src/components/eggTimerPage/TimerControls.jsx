@@ -8,14 +8,20 @@ function TimerControls({
   cookingOption,
 }) {
   const handleTimerClick = (event) => {
-    const t = Math.floor(event.target.value / 60);
-    setMinutesRemaining(t);
-    const o = event.target.value - 60 * t;
-    setSecondsRemaining(o);
+    setMinutesRemaining(minuteSum(event.target.value));
+    setSecondsRemaining(secondsSum(event.target.value));
   };
 
+  function minuteSum(totalSeconds){
+    return Math.floor(totalSeconds / 60);
+  }
+
+  function secondsSum(totalSeconds){
+    return totalSeconds - (60 * minuteSum(totalSeconds));
+  }
+
   return (
-    <div className={styles.timeOptionButtons}>
+    <div className={styles.timeOptionButtons} data-testid={'timerControls'}>
       {cookingOption &&
         cookingOption.map((option) => {
           return (
@@ -24,6 +30,7 @@ function TimerControls({
               key={option.type}
               onClick={handleTimerClick}
               value={option.time}
+              data-testid={`test ${option.type}`}
             >
               {option.type}
             </button>
