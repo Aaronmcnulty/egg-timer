@@ -32,8 +32,13 @@ const poachedEggTimes = [
 
 const instructionsBoiled = [
   
-  "Fill a saucepan with water and heat to 100 degrees",
-  "Make sure the water is boiling before adding your eggs and starting the timer.",
+  "Fill a saucepan with water, enough to cover your eggs completely",
+  "Put the saucepan on the hob and heat the water to boiling",
+  "Add your eggs to the boiling water (use a spoon to lower them in for safety)",
+  "Start the egg timer and leave the eggs to cook", 
+  "When the timer runs out, remove the saucepan from the hob and drain the water", 
+  "Your eggs are ready to eat!"
+
   
 ];
 

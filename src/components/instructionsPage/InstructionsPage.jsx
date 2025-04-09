@@ -18,7 +18,7 @@ function InstructionsPage({}){
     return(
         <div className={styles.instructionsPage}>
             <div className={styles.mainTitle}>
-                <h1>Preparing to Cook:</h1>
+                <h1>Guide to Cook:</h1>
             </div>
             <div className={styles.cookingSelectContainer}>
                     <select onChange={handleCookingChange}>
@@ -34,7 +34,7 @@ function InstructionsPage({}){
                 })}
                 </ul>
             </div>
-            <Link className={styles.eggTimerButton} to="/home/timer">I'm ready</Link>
+            <Link className={styles.eggTimerButton} to="/home/timer">Ready</Link>
         </div>
     )
 }
