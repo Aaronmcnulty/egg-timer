@@ -2,11 +2,28 @@
 .navbarContainer{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
+    max-height:100%;
 }
 
 .navbarLink{
-    color:goldenrod;
+    width:30%;
+    height:20%;
+    padding: 1em 0.5em 1em 0.5em;
+    margin: 0px 5px 0px 5px;
+    background-color: white;
+    color: goldenrod;
+    border: solid goldenrod;
+    font-size: small;
+    text-align: center;
+    font-weight: 1000;
+    box-shadow: 0px 5px 1px 0px;
+    border-radius: 8px;
     font-family: "Borel", cursive;
 }
 
+
+.navbarLink:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }

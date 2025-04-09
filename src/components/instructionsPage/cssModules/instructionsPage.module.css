@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: 1fr 0.4fr 4fr 2fr;
     place-items: center;
+    overflow: hidden;
 }
 
 h1{
@@ -12,11 +13,13 @@ h1{
 
 .mainTitle{
   font-family: "Borel", cursive;
+  animation: growAppear 1s;
 }
 
 .cookingInstructionsContainer{
     height: 100%;
     padding: 1em;
+    animation: slideInLeft 1s;
 }
 
 .instructionsList{
@@ -52,4 +55,23 @@ h1{
         font-family: "Borel", cursive;
         width: 20%;
         transition: 0.2s;
+        animation: growAppear 1s;
+}
+
+.cookingSelectContainer{
+    animation: growAppear 1s;
+}
+
+@keyframes slideInLeft { 
+    0%{
+        opacity: 0;
+        transform: translateX(400px);
+    }
+}
+
+@keyframes growAppear {
+    0%{
+        opacity: 0;
+        scale:0;
+    }
 }

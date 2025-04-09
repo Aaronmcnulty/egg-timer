@@ -8,8 +8,9 @@ function LandingPage() {
     <div className={styles.landingPageContainer}>
       
      <h1 className={styles.pageTitle}>Egg Time</h1>
-      <EggElement />
-      
+     
+        <EggElement />
+
         <Navbar />
       
     </div>
