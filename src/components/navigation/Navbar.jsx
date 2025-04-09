@@ -3,7 +3,14 @@ import styles from "./cssModules/navBar.module.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return <Link to="/">landing</Link>;
+  return (
+
+    <div className={styles.navbarContainer}>
+        <Link className={styles.navbarLink} to="home/timer">Egg Timer</Link>
+        <Link className={styles.navbarLink} to="home/instructions">How To</Link>
+    </div>
+  )
+  
 }
 
 export default Navbar;

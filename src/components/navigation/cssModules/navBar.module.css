@@ -1,0 +1,12 @@
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbarLink{
+    color:goldenrod;
+    font-family: "Borel", cursive;
+}
+

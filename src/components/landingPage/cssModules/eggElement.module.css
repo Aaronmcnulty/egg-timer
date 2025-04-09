@@ -16,6 +16,7 @@
   aspect-ratio: 3 / 4;
   border-radius: 100% / 125% 125% 80% 80%;
   box-shadow: inset 10px -10px 20px 5px rgb(223, 220, 190);
+  border: solid goldenrod;
 }
 
 .eggHighlight {

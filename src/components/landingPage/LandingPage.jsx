@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import styles from "./cssModules/landingPage.module.css";
 import EggElement from "./EggElement";
+import Navbar from "../navigation/Navbar";
 
 function LandingPage() {
   return (
     <div className={styles.landingPageContainer}>
-      <Link to="home/instructions">How To</Link>
-      <Link to="home/timer">Timer</Link>
-     <h1 className={styles.pageTitle}>Landing Page</h1>
+      
+     <h1 className={styles.pageTitle}>Egg Time</h1>
       <EggElement />
+      
+        <Navbar />
+      
     </div>
   );
 }

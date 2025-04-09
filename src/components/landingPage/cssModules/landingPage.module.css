@@ -11,3 +11,9 @@
 .pageTitle {
   text-align: center;
 }
+
+h1{
+  text-decoration: none;
+
+  font-family: "Borel", cursive;
+}
