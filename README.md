@@ -1,12 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Egg Timer:
 
-Currently, two official plugins are available:
+An app to help cook the perfect boiled or poached egg. 
+Users can choose between boiled and poached eggs and set the timer to achieve their preffered yolk consistency. 
+The 'How To' Page gives novices a step by step guide on what to prepare before submerging their eggs and starting the egg timer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation: 
+    
+    Clone repository
+    
+    Install Dependencies:
+    npm install
 
-## Expanding the ESLint configuration
+    Run App Locally (localhost:5173)
+    npm run dev
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Formatting:
+
+    Prettier:
+    npx prettier . --write
+
+
+Author:
+Aaron McNulty
+
