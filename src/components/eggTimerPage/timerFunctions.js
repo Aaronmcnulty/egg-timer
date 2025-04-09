@@ -4,6 +4,6 @@ export function minuteSum(totalSeconds){
     return Math.floor(totalSeconds / 60);
   }
 
-  export function secondsSum(totalSeconds){
+  export function secondSum(totalSeconds){
     return totalSeconds - (60 * minuteSum(totalSeconds));
   }

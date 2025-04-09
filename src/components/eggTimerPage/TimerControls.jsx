@@ -1,6 +1,6 @@
 import styles from "./cssModules/timerControls.module.css";
 import PropTypes from "prop-types"; // ES6
-import { minuteSum, secondsSum } from "./timerFunctions";
+import { minuteSum, secondSum } from "./timerFunctions";
 
 
 
@@ -12,7 +12,7 @@ function TimerControls({
 }) {
   const handleTimerClick = (event) => {
     setMinutesRemaining(minuteSum(event.target.value));
-    setSecondsRemaining(secondsSum(event.target.value));
+    setSecondsRemaining(secondSum(event.target.value));
   };
 
   
