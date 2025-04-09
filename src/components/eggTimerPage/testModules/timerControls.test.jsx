@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import TimerControls from '../TimerControls';
 import { cookingOptions } from '../cookingOptions';
-
+import {minuteSum} from '../TimerControls';
 
 
 describe("Timer Controls Component", () => {
@@ -128,10 +128,8 @@ describe("Poached Egg Time Buttons", () => {
 describe("scc", () => {
 
     it("Should ", async () => {
-
-        render(<TimerControls 
-        />)
-
+        
+        expect(minuteSum(60)).toEqual(1)
         
     })
 })

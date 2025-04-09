@@ -1,5 +1,8 @@
 import styles from "./cssModules/timerControls.module.css";
 import PropTypes from "prop-types"; // ES6
+import { minuteSum, secondsSum } from "./timerFunctions";
+
+
 
 function TimerControls({
   setCountdownStarted,
@@ -12,14 +15,7 @@ function TimerControls({
     setSecondsRemaining(secondsSum(event.target.value));
   };
 
-  function minuteSum(totalSeconds){
-    return Math.floor(totalSeconds / 60);
-  }
-
-  function secondsSum(totalSeconds){
-    return totalSeconds - (60 * minuteSum(totalSeconds));
-  }
-
+  
   return (
     <div className={styles.timeOptionButtons} data-testid={'timerControls'}>
       {cookingOption &&
