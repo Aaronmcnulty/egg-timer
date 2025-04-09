@@ -1,19 +1,27 @@
 import styles from "./cssModules/instructionsPage.module.css"
 import { cookingOptions } from "../eggTimerPage/cookingOptions";
 import { cookingInstructions } from "../eggTimerPage/cookingOptions";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 function InstructionsPage({}){
 
     const [instructionsOption, setInstructionsOption] = useState(0)
+    const [isHidden, setIsHidden] = useState(true)
 
     const handleCookingChange = (event) => {
         setInstructionsOption(event.target.value);
+        setIsHidden(false)
       };
 
-
+      useEffect(() => {
+        if(isHidden == false){
+            setTimeout(() => {
+                setIsHidden(true)
+            }, 100)
+        }
+      }, [isHidden])
 
     return(
         <div className={styles.instructionsPage}>
@@ -29,7 +37,7 @@ function InstructionsPage({}){
 
             <div className={styles.cookingInstructionsContainer}>
                 <ul className={styles.instructionsList}>
-                {cookingInstructions[instructionsOption] && cookingInstructions[instructionsOption].map(entry => {
+                {isHidden && cookingInstructions[instructionsOption].map(entry => {
                     return <li className={styles.listEntry}>{entry}</li>
                 })}
                 </ul>

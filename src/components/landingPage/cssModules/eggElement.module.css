@@ -1,5 +1,5 @@
 .eggContainter {
-  z-index: ;
+  z-index: 5;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -33,8 +33,6 @@
   transform: rotate(20deg) skew(50deg);
   box-shadow: -20px 15px 20px 10px white;
 }
-
-
 
 
 @keyframes boil {
