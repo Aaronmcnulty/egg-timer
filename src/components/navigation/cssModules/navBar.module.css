@@ -1,5 +1,6 @@
 
 .navbarContainer{
+    z-index: 6;
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -14,7 +15,7 @@
     background-color: white;
     color: goldenrod;
     border: solid goldenrod;
-    font-size: small;
+    font-size: medium;
     text-align: center;
     font-weight: 1000;
     box-shadow: 0px 5px 1px 0px;

@@ -7,7 +7,7 @@ function LandingPage() {
   return (
     <div className={styles.landingPageContainer}>
       
-     
+     <h1>It's Egg Cooking Time</h1>
      
         <EggElement />
 
