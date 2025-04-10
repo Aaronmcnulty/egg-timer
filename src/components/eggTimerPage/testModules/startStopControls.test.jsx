@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import StopStartControls from "../StartStopControls";
 
-describe("blah", () => {
+describe("StartStopControls", () => {
 
     it("Should render component", async () => {
         render(<StopStartControls />)
@@ -15,7 +15,7 @@ describe("blah", () => {
         expect(stopButton.textContent).toEqual("STOP");
     })
 
-
+ 
 
     it("Should call functions when 'START' button is clicked", async () => {
         window.confirm = vi.fn(() => true)

@@ -37,13 +37,12 @@ function EggTimerPage() {
   useEffect(() => {
     if (minutesRemaining == 0 && secondsRemaining == 0) {
       setTimerFinished(true);
-      console.log("hi");
     }
   }, [minutesRemaining, secondsRemaining]);
 
   return (
     <div className={styles.eggTimerContainer}>
-      <h1 className={styles.mainTitle}>How Do You Like Your Eggs?</h1>
+      <h1 data-testid={'page-title'} className={styles.mainTitle}>How Do You Like Your Eggs?</h1>
       <div className={styles.cookingSelectContainer}>
         <select onChange={handleCookingChange}>
           <option value={0}>BOILED</option>
