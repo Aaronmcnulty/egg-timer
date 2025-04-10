@@ -7,7 +7,6 @@
   align-items: center;
   width: 100%;
   height: 100svh;
-  background-color: powderblue;
   overflow: hidden;
 }
 
@@ -15,12 +14,14 @@
   grid-row: 1;
   grid-column: 2;
   text-align: center;
+  align-self: end;
 }
 
 h1{
   z-index:5;
   text-decoration: none;
   font-family: "Borel", cursive;
+  font-size: 7vw;
 }
 
 .bubble , .bubbleTwo , .bubbleThree, .bubbleFour, .bubbleFive, .bubbleSix, .bubbleSeven, .bubbleEight, .bubbleNine{

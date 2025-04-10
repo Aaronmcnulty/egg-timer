@@ -27,11 +27,11 @@
   bottom: 30%;
   background-color: rgb(255, 255, 243);
   border: saddlebrown;
-  width: 60px;
+  width: 20%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   transform: rotate(20deg) skew(50deg);
-  box-shadow: -20px 15px 20px 10px  rgb(255, 254, 244);
+  box-shadow:  -1em 1em 3em 1em  rgb(255, 254, 244);
 }
 
 
