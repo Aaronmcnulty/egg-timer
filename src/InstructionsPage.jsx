@@ -26,12 +26,12 @@ function InstructionsPage({}){
     return(
         <div className={styles.instructionsPage}>
             <div className={styles.mainTitle}>
-                <h1 data-testid={'pageTitle'}>Guide to Cook:</h1>
+                <h1>Guide to Cook:</h1>
             </div>
             <div  className={styles.cookingSelectContainer}>
-                    <select data-testid={'cookingOptionSelect'} onChange={handleCookingChange}>
-                      <option data-testid={'select-option'} key={0} value={0}>BOILED</option>
-                      <option data-testid={'select-option'} key={1} value={1}>POACHED</option>
+                    <select data-testid={'optionsDropDownMenu'} onChange={handleCookingChange}>
+                      <option value={0}>BOILED</option>
+                      <option value={1}>POACHED</option>
                     </select>
             </div>
 
