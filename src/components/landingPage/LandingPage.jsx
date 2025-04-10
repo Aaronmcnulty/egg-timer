@@ -1,4 +1,3 @@
-import { BrowserRouter, Link } from "react-router-dom";
 import styles from "./cssModules/landingPage.module.css";
 import EggElement from "./EggElement";
 import Navbar from "../navigation/Navbar";
@@ -6,14 +5,16 @@ import Navbar from "../navigation/Navbar";
 function LandingPage() {
   return (
     <div className={styles.landingPageContainer}>
-      
-     <h1 data-testid={'page-title'}>It's Egg Cooking Time</h1>
-     
-        <EggElement />
 
-        <BrowserRouter>
-        <Navbar />
-        </BrowserRouter>
+      <div className={styles.pageTitle}>
+        <h1 data-testid={'page-title'}>It's Egg Cooking Time</h1>
+      </div>
+
+      <EggElement />
+
+
+      <Navbar />
+      <div className={styles.bubblesContainer}>
         <div className={styles.bubble}>
 
         </div>
@@ -41,6 +42,8 @@ function LandingPage() {
         <div className={styles.bubbleNine}>
 
         </div>
+      </div>
+
     </div>
   );
 }
