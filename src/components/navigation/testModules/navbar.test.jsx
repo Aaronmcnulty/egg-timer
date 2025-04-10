@@ -20,4 +20,65 @@ describe('Navbar component Tests', () => {
             expect(navbarContainer).toBeInTheDocument()
         })
 
+        
+
+                
 })
+
+describe('Egg Timer Link Tests', () => {
+
+    it('Should contain the correct href to the EggTimePage route', async () => {
+        const user = userEvent.setup()
+        render(
+            <BrowserRouter>
+                <Navbar />
+            </BrowserRouter>
+        )
+            const eggTimerLink = screen.getByTestId("egg-timer-link")
+        
+            expect(eggTimerLink.href).toContain('home/timer')
+        })
+    
+        it('Should NOT contain the href to the InstructionsPage route', async () => {
+            const user = userEvent.setup()
+            render(
+                <BrowserRouter>
+                    <Navbar />
+                </BrowserRouter>
+            )
+                const eggTimerLink = screen.getByTestId("egg-timer-link")
+            
+                expect(eggTimerLink.href).not.toContain('home/instructions')
+            })
+                
+})
+
+describe('Instructions Link Tests', () => {
+
+    it('Should contain the correct href to the InstructionsPage route', async () => {
+        const user = userEvent.setup()
+        render(
+            <BrowserRouter>
+                <Navbar />
+            </BrowserRouter>
+        )
+            const instructionsLink = screen.getByTestId("instructions-link")
+        
+            expect(instructionsLink.href).toContain('home/instructions')
+        })
+    
+        it('Should NOT contain the href to the EggTimePage route', async () => {
+            const user = userEvent.setup()
+            render(
+                <BrowserRouter>
+                    <Navbar />
+                </BrowserRouter>
+            )
+                const instructionsLink = screen.getByTestId("instructions-link")
+            
+                expect(instructionsLink.href).not.toContain('home/timer')
+            })
+                
+})
+
+
