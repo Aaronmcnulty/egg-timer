@@ -18,7 +18,9 @@ h1{
   z-index:5;
   text-decoration: none;
   font-family: "Borel", cursive;
-  font-size: 7vw;
+  color: goldenrod;
+  font-weight: 1000;
+  text-shadow: 1px 1px 2px red;
 }
 
 button {

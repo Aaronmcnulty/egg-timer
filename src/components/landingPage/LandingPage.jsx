@@ -7,7 +7,7 @@ function LandingPage() {
     <div className={styles.landingPageContainer}>
 
       <div className={styles.pageTitle}>
-        <h1 data-testid={'page-title'}>It's Egg Cooking Time</h1>
+        <h1 data-testid={'page-title'}>Egg Time</h1>
       </div>
 
       <EggElement />

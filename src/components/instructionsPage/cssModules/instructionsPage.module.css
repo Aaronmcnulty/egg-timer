@@ -24,6 +24,7 @@ h1{
     width: 90%;
     padding: 1em;
     animation: slideInLeft 1s;
+
 }
 
 .instructionsList{
@@ -51,17 +52,18 @@ h1{
         align-items: center;
         aspect-ratio: 3/4;
         border-radius: 100% / 125% 125% 80% 80%;
-        background-color: rgb(252, 255, 236);
+        background-color: rgb(244, 248, 220);
         border: solid goldenrod;
         box-shadow: inset 0px -5px 8px 0px rgb(189, 184, 167);
         text-align: center;
         color: goldenrod;
         font-weight: 1000;
-        font-size: small;
+        font-size: 6vw;
         font-family: "Borel", cursive;
         width: 20%;
         transition: 0.2s;
         animation: growAppear 1s;
+        text-shadow: 1px 1px 1px red;
 }
 
 .cookingSelectContainer{
