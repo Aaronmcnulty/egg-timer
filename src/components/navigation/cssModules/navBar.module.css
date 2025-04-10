@@ -7,6 +7,7 @@
     justify-content: space-around;
     width: 100%;
     max-height:100%;
+   
 }
 
 .navbarLink{
@@ -23,10 +24,19 @@
     box-shadow: 0px 5px 1px 0px;
     border-radius: 8px;
     font-family: "Borel", cursive;
+    animation: growAppear 1s;
 }
 
 
 .navbarLink:active {
     box-shadow: none;
     transform: translateY(5px);
+  }
+
+  @keyframes growAppear {
+  
+    0%{
+      opacity: 0;
+      scale: 0;
+    }
   }
