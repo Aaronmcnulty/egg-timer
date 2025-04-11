@@ -2,10 +2,9 @@
   z-index: 5;
   display: grid;
   grid-template-rows: 0.5fr 1fr 5fr 1fr 1fr;
-  grid-template-columns: 0.5fr 10fr 0.5fr;
-  place-content: center;
+  grid-template-columns: 1fr 10fr 1fr;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100svh;
   overflow: hidden;
 }
@@ -122,3 +121,30 @@
     transform: translateY(-500px); 
   }
 } 
+
+@media only screen and (max-width: 640px) {
+  .pageTitle {
+    font-size: 18vw;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .landingPageContainer{
+    
+    }
+  
+  .pageTitle {
+    font-size: 18vw;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .pageTitle {
+    font-size: 18vw;
+  }
+
+}
