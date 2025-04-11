@@ -1,7 +1,7 @@
 .landingPageContainer {
   z-index: 5;
   display: grid;
-  grid-template-rows: 0.5fr 1fr 5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 1fr 0.5fr;
   grid-template-columns: 1fr 10fr 1fr;
   align-items: center;
   width: 100vw;
@@ -17,10 +17,10 @@
   animation: slideDown 1s; 
   text-decoration: none;
   font-family: "Borel", cursive;
-  font-size: 19vw;
+  font-size: 16vw;
   color: goldenrod;
   font-weight: 1000;
-  line-height: 2.6em;
+  line-height: 2.7em;
   text-shadow: 1px 5px 1px red;
 }
 
@@ -122,29 +122,56 @@
   }
 } 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
   .pageTitle {
-    font-size: 18vw;
+    font-size: 15vw;
   }
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 
   .landingPageContainer{
     
     }
   
   .pageTitle {
-    font-size: 18vw;
+    font-size: 12vw;
+  }
+
+}
+
+@media (max-height: 600px) {
+  .landingPageContainer{
+    grid-template-columns: 0.5fr 5fr 4fr 0.5fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    gap:1em;
+  }
+
+  .pageTitle {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 8vw;
+    position: relative;
+    top:10%;
   }
 
 }
 
 @media only screen and (min-width: 992px) {
 
+  .landingPageContainer{
+    grid-template-columns: 0.5fr 5fr 4fr 0.5fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    gap:1em;
+  }
+
   .pageTitle {
-    font-size: 18vw;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 9vw;
+    position: relative;
+    top:10%;
   }
 
 }
