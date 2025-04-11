@@ -1,24 +1,22 @@
-h2 {
-  font-size: 1.5rem;
-  line-height: 1;
-  color: rgb(38, 57, 63);
-  text-decoration: underline;
-}
+
 
 .mainTitle {
   font-family: "Borel", cursive;
   text-align: center;
   animation: slideDown 2s;
+  font-size: 6.5vw;
+  color:goldenrod;
+  margin-top: 1em;
 }
 
 select {
   display: flex;
   align-content: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5em;
   background-color: gold;
   border: double goldenrod;
-  font-size: large;
+  font-size: 5vw;
   text-align: center;
   color: goldenrod;
   font-weight: 750;
@@ -135,13 +133,9 @@ option {
     font-size: 6vw;
   }
   
-  .eggShape{
-    
-  }
-
 
   select{
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   option{
