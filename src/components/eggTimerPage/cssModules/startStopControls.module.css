@@ -21,7 +21,7 @@
   font-weight: 1000;
   font-size: small;
   font-family: "Borel", cursive;
-  width: 20%;
+  width: 15vw;
   text-decoration: underline dotted 5px;
   transition: 0.2s;
 }
@@ -29,4 +29,11 @@
 .startStopButton:active {
   box-shadow: inset 0px 5px 15px 5px rgb(172, 168, 158);
   transform: translateY(3px);
+}
+
+@media only screen and (min-width: 768px) {
+
+  .startStopButton{
+    font-size: 3vw;
+  }
 }

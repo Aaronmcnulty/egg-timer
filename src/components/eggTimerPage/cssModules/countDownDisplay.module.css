@@ -13,7 +13,7 @@
 }
 
 .timeDisplay {
-  min-width: 100%;
+  width: 100%;
   text-align: center;
   color: black;
   font-size: xx-large;
@@ -35,4 +35,9 @@
   100% {
     scale: 1;
   }
+}
+
+@media only screen and (min-width: 768px) {
+
+ 
 }

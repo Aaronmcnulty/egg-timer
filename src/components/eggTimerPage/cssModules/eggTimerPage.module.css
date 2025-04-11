@@ -123,3 +123,41 @@ option {
     transform: rotate(-10deg) translateX(-15px);
   }
 }
+
+
+@media only screen and (min-width: 640px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+  .mainTitle{
+    font-size: 6vw;
+  }
+  
+  .eggShape{
+    
+  }
+
+
+  select{
+    font-size: 5vw;
+  }
+
+  option{
+    font-size: 4vw;
+  }
+
+
+}
+
+@media (max-height: 600px) {
+ 
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  
+
+}
