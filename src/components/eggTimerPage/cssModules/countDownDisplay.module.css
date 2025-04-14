@@ -37,7 +37,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   
   .timeContainer {
     width: 43%;
@@ -49,9 +49,33 @@
  
 }
 
+@media (min-width: 992px) {
+  
+  .timeContainer {
+    width: 43%;
+    height: 35%;
+  }
+  .timeDisplay {
+    font-size: 4vw;
+  }
+ 
+}
+
 @media (max-height: 600px) {
   .timeDisplay {
     font-size: 3vw;
   }
 
+}
+
+@media (min-width: 1200px) {
+  
+  .timeContainer {
+    width: 43%;
+    height: 35%;
+  }
+  .timeDisplay {
+    font-size: 4vw;
+  }
+ 
 }

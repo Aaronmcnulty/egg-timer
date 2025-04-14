@@ -142,6 +142,12 @@ option {
     width: 60%;
     height:auto;
   }
+
+  .eggShapeAlarm {
+      width: 60%;
+      height:auto;
+    
+  }
   
   select{
     font-size: 4vw;
@@ -155,13 +161,88 @@ option {
 
 
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
 
+  .eggTimerContainer{
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+  
+   .mainTitle{
+    grid-column: 2/4;
+    grid-row: 1;
+    font-size: 3vw;
+  }
+  
+  .eggShape {
+    width: 70%;
+    grid-column: 2;
+    grid-row: 3/6;
+    height:auto;
+  }
+  
+  .eggShapeAlarm {
+    width: 55%;
+    grid-column: 1;
+    grid-row: 3/6;
+    height:auto;
+ }
+ 
+  .cookingSelectContainer{
+    grid-column: 3;
+    grid-row: 3;
+    margin-bottom: 3em;
+  }
+ 
+  select{
+   font-size: 2vw;
+  }
   
 
 }
 
 
+@media (min-width: 1200px) {
+  
+  .eggTimerContainer{
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+  
+   .mainTitle{
+    grid-column: 2/4;
+    grid-row: 1;
+    font-size: 3vw;
+  }
+  
+  .eggShape {
+    width: 70%;
+    grid-column: 2;
+    grid-row: 3/6;
+    height:auto;
+  }
+  
+  .eggShapeAlarm {
+    width: 55%;
+    grid-column: 1;
+    grid-row: 3/6;
+    height:auto;
+ }
+ 
+  .cookingSelectContainer{
+    grid-column: 3;
+    grid-row: 3;
+    margin-bottom: 3em;
+  }
+ 
+  select{
+   font-size: 2vw;
+  }
+  
+ 
+}
 
 @media (max-height: 600px) {
   .eggTimerContainer{
@@ -183,6 +264,13 @@ option {
    height:auto;
  }
  
+ .eggShapeAlarm {
+   width: 55%;
+   grid-column: 2;
+   grid-row: 3/6;
+   height:auto;
+}
+
  .cookingSelectContainer{
    grid-column: 3;
    grid-row: 3;
@@ -194,3 +282,5 @@ option {
  }
  
  }
+
+

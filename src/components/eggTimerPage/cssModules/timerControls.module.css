@@ -7,7 +7,7 @@
 }
 
 .timerButton {
-  padding: 0em 0.5em 0em 0.5em;
+  padding: 0.5em 0.5em 0em 0.5em;
   margin: 0px 5px 0px 5px;
   background-color: white;
   color: goldenrod;
@@ -25,22 +25,50 @@
   transform: translateY(5px);
 }
 
-@media only screen and (min-width: 400px) {
+@media (min-width: 400px) {
 
   .timeOptionButtons{
     height: 40%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media  (min-width: 768px) {
 
   .timerButton{
     font-size: 3vw;
   }
 }
 
+@media (min-width: 992px) {
+  
+  .timeOptionButtons{
+    grid-column: 3;
+    grid-row: 3/5;
+    height:30%;
+  }
 
-@media (max-height: 600px) {
+  .timerButton{
+    font-size: 1.5vw;
+  }
+ 
+}
+
+
+ @media (max-height: 600px) {
+  .timeOptionButtons{
+    grid-column: 3;
+    grid-row: 3/5;
+    height:30%;
+  }
+
+  .timerButton{
+    font-size: 1.5vw;
+  }
+ 
+ }
+
+
+@media (min-width: 1200px) {
   .timeOptionButtons{
     grid-column: 3;
     grid-row: 3/5;
