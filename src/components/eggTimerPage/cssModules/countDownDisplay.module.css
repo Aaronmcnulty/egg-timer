@@ -21,8 +21,8 @@
   font-weight: 550;
   text-shadow: 0px 5px 5px rgb(83, 107, 83);
   border: double 0.2em;
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 0.5em;
+  padding: 0.1em;
   background-color: darkseagreen;
   box-shadow: inset 1px 1px 10px 1px rgb(21, 31, 4);
 }
@@ -38,6 +38,20 @@
 }
 
 @media only screen and (min-width: 768px) {
-
+  
+  .timeContainer {
+    width: 43%;
+    height: 35%;
+  }
+  .timeDisplay {
+    font-size: 5vw;
+  }
  
+}
+
+@media (max-height: 600px) {
+  .timeDisplay {
+    font-size: 3vw;
+  }
+
 }

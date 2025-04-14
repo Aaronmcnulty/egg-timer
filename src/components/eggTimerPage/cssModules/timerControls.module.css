@@ -2,11 +2,12 @@
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  height: 70%;
 }
 
 .timerButton {
-  padding: 1em 0.5em 1em 0.5em;
+  padding: 0em 0.5em 0em 0.5em;
   margin: 0px 5px 0px 5px;
   background-color: white;
   color: goldenrod;
@@ -24,6 +25,12 @@
   transform: translateY(5px);
 }
 
+@media only screen and (min-width: 400px) {
+
+  .timeOptionButtons{
+    height: 40%;
+  }
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -31,3 +38,17 @@
     font-size: 3vw;
   }
 }
+
+
+@media (max-height: 600px) {
+  .timeOptionButtons{
+    grid-column: 3;
+    grid-row: 3/5;
+    height:30%;
+  }
+
+  .timerButton{
+    font-size: 1.5vw;
+  }
+ 
+ }

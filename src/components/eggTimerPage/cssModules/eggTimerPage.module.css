@@ -6,7 +6,7 @@
   animation: slideDown 2s;
   font-size: 6.5vw;
   color:goldenrod;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 select {
@@ -16,13 +16,14 @@ select {
   border-radius: 0.5em;
   background-color: gold;
   border: double goldenrod;
-  font-size: 5vw;
   text-align: center;
   color: goldenrod;
   font-weight: 750;
+  font-size: 6vw;
   letter-spacing: 2px;
   box-shadow: 0px 5px 1px 0px;
   text-shadow: 1px 1px 1px rgb(131, 99, 19);
+  
 }
 
 
@@ -38,6 +39,7 @@ option {
   place-items: center;
   justify-content: center;
   min-height: 100%;
+  width: 100%;
 }
 
 .eggShape {
@@ -50,7 +52,8 @@ option {
   background-color: rgb(252, 255, 236);
   border: solid 10px goldenrod;
   margin: 1em;
-  height: 100%;
+  height: auto;
+  width: 80%;
   animation: appear 2s;
   box-shadow: inset 0px -15px 25px 0px rgb(139, 177, 182);
 }
@@ -123,9 +126,11 @@ option {
 }
 
 
+
 @media only screen and (min-width: 640px) {
   
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -133,25 +138,59 @@ option {
     font-size: 6vw;
   }
   
-
+  .eggShape{
+    width: 60%;
+    height:auto;
+  }
+  
   select{
     font-size: 4vw;
   }
 
   option{
-    font-size: 4vw;
+    font-size: 2vw;
   }
 
-
 }
 
-@media (max-height: 600px) {
- 
 
-}
 
 @media only screen and (min-width: 992px) {
 
   
 
 }
+
+
+
+@media (max-height: 600px) {
+  .eggTimerContainer{
+   display: grid;
+   grid-template-columns: 1fr 6fr 6fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+ 
+  .mainTitle{
+   grid-column: 2/4;
+   grid-row: 1;
+   font-size: 3vw;
+ }
+ 
+ .eggShape {
+   width: 55%;
+   grid-column: 2;
+   grid-row: 3/6;
+   height:auto;
+ }
+ 
+ .cookingSelectContainer{
+   grid-column: 3;
+   grid-row: 3;
+   margin-bottom: 3em;
+ }
+
+ select{
+  font-size: 2vw;
+ }
+ 
+ }
