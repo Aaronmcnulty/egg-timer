@@ -15,6 +15,7 @@ h1{
 .mainTitle{
   font-family: "Borel", cursive;
   animation: growAppear 1s;
+  text-shadow: 1px 2px 1px red;
 }
 
 .cookingInstructionsContainer{
@@ -44,6 +45,8 @@ h1{
     list-style:circle;
     padding: 5px;
     animation: growAppear 1s;
+    font-weight: 1000;
+    color: goldenrod;
 }
 
 .eggTimerButton{

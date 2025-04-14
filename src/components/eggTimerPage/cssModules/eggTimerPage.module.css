@@ -50,7 +50,7 @@ option {
   aspect-ratio: 3/4;
   border-radius: 100% / 125% 125% 80% 80%;
   background-color: rgb(252, 255, 236);
-  border: solid 10px goldenrod;
+  border: solid 0.3em goldenrod;
   margin: 1em;
   height: auto;
   width: 80%;
@@ -72,9 +72,10 @@ option {
   aspect-ratio: 3/4;
   border-radius: 100% / 125% 125% 80% 80%;
   background-color: rgb(252, 255, 236);
-  border: solid 10px goldenrod;
+  border: solid 0.3em goldenrod;
   margin: 1em;
-  height: 100%;
+  height: auto;
+  width: 80%;
   animation: appear 2s;
   box-shadow: inset 0px -15px 25px 0px rgb(139, 177, 182);
   animation: shake 0.5s infinite;
@@ -172,7 +173,7 @@ option {
    .mainTitle{
     grid-column: 2/4;
     grid-row: 1;
-    font-size: 3vw;
+    font-size: 5vw;
   }
   
   .eggShape {
